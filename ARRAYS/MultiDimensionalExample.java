@@ -1,4 +1,4 @@
-public class MultiDimensionalExample {
+ class MultiDimensionalExample {
     public static void main(String[] args) {
 
         int [][] matrix ={
