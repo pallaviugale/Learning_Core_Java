@@ -1,4 +1,16 @@
-package Inheritance;
+class Parent {
+    String name = "parent";
+}
+
+
+class Child extends Parent  {
+    String name = "child";
+
+    void show(){
+        System.out.println(name);
+        System.out.println(super.name);
+    }
+}
 
 class Employee {
     String company;
@@ -17,9 +29,11 @@ class Employee {
 class Manager extends Employee {
     String department;
 
-    Manager(String company, String department) {
+    public Manager(String company, String department) {
         super(company);  // call parent constructor
         this.department = department;
+        System.out.println("Manager Constructor called");
+
     }
 
     void getFullDetails() {
