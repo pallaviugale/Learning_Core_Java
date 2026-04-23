@@ -46,5 +46,8 @@ public class Super_Keyword {
     public static void main(String[] args) {
         Manager manager = new Manager("MAQ", "IT");
         manager.getFullDetails();
+        Child c = new Child();
+        c.show();
+    
     }
 }
