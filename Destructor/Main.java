@@ -1,17 +1,23 @@
-class FileHandling{
-    public FileHandling(){
-        System.out.println(" File Handling Constuctor");
-    }
+// destructor and garbage collector 
 
+
+class Demo{
+
+    Demo(){
+        System.out.println("consrtuctor is called ");
+    }
+    
    @Override
-   protected void finalize() throws throwable {
-    System.out.println("File handling distructor");
+   protected void finalize() throws Throwable {
+    System.out.println("Finalize method is called ");
    }
 
 }
 
 public class Main {
     public static void main(String[] args) {
-     FileHandling fh = new   FileHandling();
+   Demo demo = new Demo();
+   demo = null ;
+   System.gc();
     }
 }
