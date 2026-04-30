@@ -116,6 +116,8 @@ public class ArrayListMethods {
         for (Integer num : numbers) {
             System.out.println(num);
         }
+
+        
     }
 }
 // add(end) - O(1)
